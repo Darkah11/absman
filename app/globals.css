@@ -25,11 +25,12 @@ body {
 button {
   font-family: "Montserrat", serif;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .about-text{
   font-family: "Tektur", serif;
 }
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.abt::before {
+  content: "";
+  /* transform: rotate(170deg); */
+  width: calc(100% - 50px);
+  @apply absolute bottom-5 -right-[15px] bg-lightRed h-2 z-10
 }
