@@ -10,14 +10,14 @@ export default function Home() {
         </Link>
 
         <Link href={"/"}>
-          <button className=" bg-white text-lightRed font-bold w-[160px] py-3 rounded-md uppercase text-sm">
+          <button className="  bg-white text-lightRed font-bold w-[120px] py-2 rounded-md uppercase text-sm">
             Buy Now
           </button>
         </Link>
       </nav>
       <section className=" relative text-white px-5 py-16 pt-32 ">
         <div className=" absolute w-full h-full top-0 left-0">
-          <div className=" absolute w-full bg-black h-full opacity-90" />
+          <div className=" absolute w-full bg-black h-full opacity-70" />
           <img
             src="/absman-bg.jpeg"
             alt="absman background image"
@@ -26,20 +26,37 @@ export default function Home() {
         </div>
         <div className=" relative">
           <div className=" text-center">
-            <h1 className=" text-lightGreen font-bold text-5xl">ABSMAN</h1>
-            <p className=" mt-3">
+            <h1 className=" text-lightGreen font-bold text-6xl">ABSMAN</h1>
+            <div className=" flex items-center justify-center gap-x-5 mt-5">
+              <Link href={"/"}>
+              <button  className=" hover:bg-black w-12 bg-white p-2 rounded-lg">
+                <img src="/tel.svg" alt="" />
+              </button>
+              </Link>
+              <Link href={"/"}>
+              <button className=" hover:bg-black w-12 bg-white p-2 rounded-lg">
+                <img src="/xtwitter.svg" alt="" />
+              </button>
+              </Link>
+              <Link href={"/"}>
+              <button className=" hover:bg-black w-12 bg-white p-2 rounded-lg">
+                <img src="/instagram.svg" alt="" />
+              </button>
+              </Link>
+            </div>
+            {/* <p className=" mt-3">
               In a world where trust is a rare commodity and chaos reigns,
               Absman rises from the shadows—a relentless force protecting the
               Abstract blockchain from the villains who would see it burn.
-            </p>
-            <div className=" flex items-center justify-center gap-x-3 mt-5">
+            </p> */}
+            {/* <div className=" flex items-center justify-center gap-x-3 mt-5">
               <button className=" bg-white text-lightRed font-bold w-[160px] py-3 rounded-md uppercase text-sm">
                 Join Telegram
               </button>
               <button className=" bg-lightGreen font-bold w-[160px] py-3 rounded-md uppercase text-sm">
                 Join X
               </button>
-            </div>
+            </div> */}
           </div>
           <div className=" mt-10">
             <img src="/absman.png" alt="absman" className=" mx-auto" />
@@ -49,7 +66,7 @@ export default function Home() {
       <section className=" bg-lightGreen px-5 py-16 text-white">
         <h2 className=" uppercase text-center text-white text-5xl abt relative w-fit mx-auto">About</h2>
         <div className=" mt-10">
-          <div>
+          <div className=" border p-3 rounded-md">
             <img src="about.jpeg" alt="about image" className=" rounded-md" />
           </div>
           <div className=" mt-5 about-text text-lg">
@@ -66,7 +83,7 @@ export default function Home() {
           </div>
         </div>
         <div className=" mt-10">
-          <div>
+          <div className=" border p-3 rounded-md">
             <img src="about-2.jpg" alt="about image" className=" rounded-md" />
           </div>
           <div className=" mt-5 about-text text-lg">
