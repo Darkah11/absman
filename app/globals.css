@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,12 +25,89 @@ body {
 button {
   font-family: "Roboto", serif;
 }
-h1, h2, h3, h4, .about-text{
+h1 {
+  -webkit-text-stroke: 2px #64bf7a;
+}
+h1,
+h2,
+h3,
+h4,
+.about-text {
   font-family: "Tektur", serif;
+}
+.btn {
+  box-shadow: 20px 0px 10px #64bf7b23, -20px 0px 10px #64bf7b23,
+    0px 20px 10px #64bf7b23, 0px -20px 10px #64bf7b23;
 }
 .abt::before {
   content: "";
   /* transform: rotate(170deg); */
   width: calc(100% - 50px);
-  @apply absolute bottom-5 -right-[15px] bg-lightRed h-2 z-10
+  @apply absolute bottom-5 -right-[15px] bg-lightRed h-2 z-10;
+}
+
+@-webkit-keyframes slide /* Safari and Chrome */ {
+  0% {
+    @apply -right-[15px]
+  }
+  50% {
+    @apply -right-[40px]
+  }
+  100% {
+    @apply -right-[15px]
+  }
+}
+@keyframes slide {
+  0% {
+    @apply -right-[15px]
+  }
+  50% {
+    @apply -right-[40px]
+  }
+  100% {
+    @apply -right-[15px]
+  }
+}
+.abt::before {
+  -webkit-animation: slide 2s linear infinite;
+  -moz-animation: slide 2s linear infinite;
+  -ms-animation: slide 2s linear infinite;
+  -o-animation: slide 2s linear infinite;
+  animation: slide 2s ease-in infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 8s linear infinite;
+  -moz-animation: rotating 8s linear infinite;
+  -ms-animation: rotating 8s linear infinite;
+  -o-animation: rotating 8s linear infinite;
+  animation: rotating 8s linear infinite;
 }
