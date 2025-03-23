@@ -105,9 +105,7 @@ export default function Home() {
               sought to safeguard. A catastrophic breach fused him with the
               Abstract code, turning him into something more—a silent sentinel
               for a digital age. The Ruggers, merciless thieves of the crypto
-              world, thrive in the dark corners of the decentralized web. They
-              exploit, they destroy, leaving only ruin in their wake. But Absman
-              fights back, not as a hero, but as a necessary evil.
+              world, thrive in the dark corners of the decentralized web.
             </p>
           </div>
         </div>
@@ -117,20 +115,31 @@ export default function Home() {
           </div>
           <div className=" mt-5 about-text text-lg">
             <p>
-              He strikes from the void, dismantling their schemes with cold
-              precision, leaving nothing but fear in his wake. He doesn’t wear
-              the Abstract logo as a symbol of hope—it’s a warning. To the
-              criminals lurking in the code, to those who prey on the innocent,
-              it means one thing: Your time is running out. Absman knows the
-              truth: In this world, there are no second chances. Only the strong
-              survive, and the strong do what’s necessary. He will protect the
-              network—no matter the cost.
+              They exploit, they destroy, leaving only ruin in their wake. But
+              Absman fights back, not as a hero, but as a necessary evil. He
+              strikes from the void, dismantling their schemes with cold
+              precision, leaving nothing but fear in his wake.
+            </p>
+          </div>
+        </div>
+        <div className=" mt-10">
+          <div className=" border p-3 rounded-md">
+            <img src="save.jpg" alt="about image" className=" rounded-md" />
+          </div>
+          <div className=" mt-5 about-text text-lg">
+            <p>
+              He doesn’t wear the Abstract logo as a symbol of hope—it’s a
+              warning. To the criminals lurking in the code, to those who prey
+              on the innocent, it means one thing: Your time is running out.
+              Absman knows the truth: In this world, there are no second
+              chances. Only the strong survive, and the strong do what’s
+              necessary. He will protect the network—no matter the cost.
             </p>
           </div>
         </div>
       </section>
       <section className=" text-darkGreen  px-5 py-16  relative">
-        <h2 className=" text-center text-4xl  uppercase">Tokenimics</h2>
+        <h2 className=" text-center text-4xl  uppercase">Tokenomics</h2>
         <div className=" mt-10 flex flex-col gap-y-5">
           <div className=" relative flex justify-center items-center">
             <img src="/frame.png" alt="" />
@@ -161,6 +170,70 @@ export default function Home() {
                 Tax
               </h3>
               <p className=" text-darkGreen capitalize font-medium mt-1">0%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className=" bg-lightGreen px-5 py-16 text-white relative">
+        <h2 className=" text-darkGreen uppercase text-center  text-5xl  relative w-fit mx-auto">
+          Goals
+        </h2>
+        <div className=" mt-10">
+          <p className="">
+            Previous dev was a villain rugged who everyone, Absman has had a
+            transformation come back with bigger muscles and new website for a
+            cto as a hero to save the chart and he has defeated the villain who
+            is old dev. Overall goal is to make absman a competition against
+            abster and noot the two biggest memes on abstract Both penguins
+            Penguins can’t fly but absman can.
+          </p>
+          <img src="/scammer.jpg" className=" mt-3 rounded-xl" alt="" />
+        </div>
+
+        <div className=" mt-12 flex flex-col gap-y-5">
+          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
+            <div>
+              <img src="partner.jpg" alt="" />
+            </div>
+            <div className=" text-gray-700 mt-8">
+              <h3 className=" text-darkGreen font-medium text-2xl">
+                Strategic Partnerships
+              </h3>
+              <p className=" mt-3">
+                Absman has forged strategic partnerships with leading players in
+                the cryptocurrency industry, as well as with key influencers and
+                platforms in the community.
+              </p>
+            </div>
+          </div>
+          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
+            <div>
+              <img src="community.jpg" alt="" className=" w-full" />
+            </div>
+            <div className=" text-gray-700 mt-8">
+              <h3 className=" text-darkGreen font-medium text-2xl">
+                Community Support
+              </h3>
+              <p className=" mt-3">
+                Through active engagement, open communication, and collaborative
+                initiatives, Absman fosters a strong sense of community spirit
+                among its members.
+              </p>
+            </div>
+          </div>
+          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
+            <div>
+              <img src="ecosystem.png" alt="" />
+            </div>
+            <div className=" text-gray-700 mt-8">
+              <h3 className=" text-darkGreen font-medium text-2xl">
+                Growing Ecosystem
+              </h3>
+              <p className=" mt-3">
+                With a growing network of users, developers, and investors,
+                Absman offers unparalleled opportunities for collaboration,
+                networking, and mutual support.
+              </p>
             </div>
           </div>
         </div>
@@ -217,13 +290,20 @@ export default function Home() {
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
+                  " overflow-hidden bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
-                <h2 className=" text-2xl font-medium">
+                <img
+                  src="/card-bg.png"
+                  alt=""
+                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  object-cover"
+                />
+
+                <h2 className=" text-2xl font-medium relative">
                   CHOOSE A CRYPTO-CURRENCY EXCHANGE:
                 </h2>
-                <p className=" text-gray-600 mt-3">
+                <p className=" text-gray-600 mt-3 relative">
                   Select a reputable exchange known for its security measures,
                   user-friendly interface, and support for your specific
                   cryptocurrency. Consider factors such as trading fees,
@@ -238,11 +318,20 @@ export default function Home() {
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
+                  " overflow-hidden bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
-                <h2 className=" text-2xl font-medium">SIGN UP AND VERIFY:</h2>
-                <p className=" text-gray-600 mt-3">
+                <img
+                  src="/card-bg.png"
+                  alt=""
+                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  object-cover"
+                />
+
+                <h2 className=" text-2xl font-medium relative">
+                  SIGN UP AND VERIFY:
+                </h2>
+                <p className=" text-gray-600 mt-3 relative">
                   Register for an account on the chosen exchange by providing
                   basic information such as your name, email address, and
                   password. Complete any required verification steps, which may
@@ -258,11 +347,19 @@ export default function Home() {
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
+                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative overflow-hidden"
                 }
               >
-                <h2 className=" text-2xl font-medium">DEPOSIT FUNDS:</h2>
-                <p className=" text-gray-600 mt-3">
+                <img
+                  src="/card-bg.png"
+                  alt=""
+                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  object-cover"
+                />
+                <h2 className=" text-2xl font-medium relative">
+                  DEPOSIT FUNDS:
+                </h2>
+                <p className=" text-gray-600 mt-3 relative">
                   Once your account is set up, deposit funds into it using one
                   of the supported payment methods. This can include bank
                   transfers, credit/debit cards, or other payment options
@@ -278,11 +375,19 @@ export default function Home() {
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative transition-all"
+                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative transition-all overflow-hidden"
                 }
               >
-                <h2 className=" text-2xl font-medium">PLACE YOUR ORDER:</h2>
-                <p className=" text-gray-600 mt-3">
+                <img
+                  src="/card-bg.png"
+                  alt=""
+                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  object-cover"
+                />
+                <h2 className=" text-2xl font-medium relative">
+                  PLACE YOUR ORDER:
+                </h2>
+                <p className=" text-gray-600 mt-3 relative">
                   Navigate to the exchange's trading section and locate the
                   trading pair for your cryptocurrency and dollars (e.g.,
                   MEME/USD). Choose whether to place a market order, which
@@ -308,7 +413,7 @@ export default function Home() {
           className=" flex flex-col justify-center items-center"
         >
           <img src="absman-logo.png" alt="" className=" w-28" />
-          
+
           <div className=" flex items-center justify-center gap-x-3 mt-5">
             <button className=" bg-lightGreen font-bold w-[180px] py-4 rounded-full uppercase text-sm btn">
               Buy Now
@@ -345,14 +450,6 @@ export default function Home() {
           viewport={{ once: false }}
           className=" mt-10"
         >
-          <div className=" flex gap-x-3 items-center justify-center">
-            <Link href={"https://t.me/absolutecinemaABS"}>
-              <img src="/telegram.svg" alt="" />
-            </Link>
-            <Link href={"https://x.com/absolutecineABS"}>
-              <img src="/x.svg" alt="" />
-            </Link>
-          </div>
           <p className=" text-center text-sm mt-3">
             &copy; 2025 ABSMAN. All rights reserved.
           </p>
