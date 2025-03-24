@@ -35,37 +35,43 @@ h4,
 .about-text {
   font-family: "Tektur", serif;
 }
-.btn {
+.nav {
+}
+/* .btn {
   box-shadow: 20px 0px 10px #64bf7b23, -20px 0px 10px #64bf7b23,
     0px 20px 10px #64bf7b23, 0px -20px 10px #64bf7b23;
-}
+} */
+ .btn {
+  box-shadow: 2px 2px 0 #1c3f25 ;
+  @apply border-2 border-darkGreen
+ }
 .abt::before {
   content: "";
   /* transform: rotate(170deg); */
-  width: calc(100% - 50px);
-  @apply absolute bottom-5 -right-[15px] bg-lightRed h-2 z-10;
+  width: 80px;
+  @apply absolute bottom-5 right-[20px] bg-lightRed h-2 z-10;
 }
 
 @-webkit-keyframes slide /* Safari and Chrome */ {
   0% {
-    @apply -right-[15px]
+    @apply right-[20px]
   }
   50% {
-    @apply -right-[40px]
+    @apply -right-[15px]
   }
   100% {
-    @apply -right-[15px]
+    @apply right-[20px]
   }
 }
 @keyframes slide {
   0% {
-    @apply -right-[15px]
+    @apply right-[20px]
   }
   50% {
-    @apply -right-[40px]
+    @apply -right-[15px]
   }
   100% {
-    @apply -right-[15px]
+    @apply right-[20px]
   }
 }
 .abt::before {

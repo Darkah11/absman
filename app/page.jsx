@@ -10,23 +10,30 @@ export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
   return (
     <>
-      <nav className=" absolute top-0 z-50 px-5 py-3 flex justify-between w-full items-center">
+      <nav className=" nav border-4 border-darkGreen bg-white rounded-full fixed top-5 z-50 px-5 py-3 flex justify-between w-[350px] left-0 right-0 mx-auto items-center">
         <Link href={"/"}>
-          <img src="/absman-logo.png" alt="" className=" w-16 rotating" />
+          <img
+            src="/absman-logo.png"
+            alt=""
+            className=" w-16 lg:w-20 rotating"
+          />
         </Link>
-        <div className=" flex items-center justify-center gap-x-2">
+        <button className=" text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
+          Buy
+        </button>
+        {/* <div className=" flex items-center justify-center gap-x-2">
           <Link href={"/"}>
-            <button className=" hover:bg-black w-8 bg-white p-2 rounded-full border-2 border-lightRed ">
+            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed ">
               <img src="/tel.svg" alt="" />
             </button>
           </Link>
           <Link href={"/"}>
-            <button className=" hover:bg-black w-8 bg-white p-2 rounded-full border-2 border-lightRed">
+            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed">
               <img src="/xtwitter.svg" alt="" />
             </button>
           </Link>
           <Link href={"/"}>
-            <button className=" hover:bg-black w-8 bg-white p-2 rounded-full border-2 border-lightRed">
+            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed">
               <img src="/instagram.svg" alt="" />
             </button>
           </Link>
@@ -35,9 +42,9 @@ export default function Home() {
               Buy
             </button>
           </Link> */}
-        </div>
+        {/* </div>  */}
       </nav>
-      <section className=" relative text-white px-5 py-16 pt-32 pb-40 ">
+      <section className=" relative text-white px-5 py-16 lg:px-12 pt-32 pb-52 ">
         <div className=" absolute w-full h-full top-0 left-0">
           <div className=" absolute w-full bg-black  h-full opacity-50" />
           <img
@@ -46,60 +53,106 @@ export default function Home() {
             className=" w-full h-full object-cover"
           />
         </div>
-        <div className=" relative">
-          <div className=" text-center">
-            <h1 className=" text-lightGreen text-transparent font-bold text-6xl">
+        <div className=" relative md:flex md:items-center md:justify-between lg:gap-x-24 lg:justify-center md:gap-x-10">
+          <div className=" text-center md:text-left">
+            <p>INTRODUCING</p>
+            <h1 className=" text-lightGreen text-transparent font-bold text-6xl lg:text-8xl">
               ABSMAN
             </h1>
-            <div className=" mt-3">
+            {/* <div className=" mt-3 md:hidden">
               <img
                 src="/absman.jpeg"
                 alt="absman"
                 className=" mx-auto rounded-lg max-w-[240px]"
               />
-            </div>
-            <p className=" mt-10">
-              In a world where trust is a rare commodity and chaos reigns,
+            </div> */}
+            <p className=" mt-4 max-w-[450px] md:mt-3 mx-auto md:mx-0 lg:text-lg">
               Absman rises from the shadows —a relentless force protecting the
-              Abstract blockchain from the villains who would see it burn .
+              Abstract blockchain .
             </p>
-            <div className=" flex items-center justify-center gap-x-3 mt-5">
-              <button className=" bg-lightGreen font-bold w-[180px] py-4 rounded-full uppercase text-sm btn">
-                Buy Now
+            <div className=" flex items-center justify-center gap-x-3 mt-5 md:mt-6 lg:mt-8 md:justify-start">
+              <button className=" bg-lightGreen font-bold w-[140px] py-4 rounded-full uppercase text-sm btn">
+                Buy
               </button>
             </div>
           </div>
-          {/* <div className=" mt-10">
+          <div className=" md:mt-0 mt-10 w-[280px] mx-auto  md:w-[40%] lg:w-[400px]">
             <img
-              src="/absman.jpeg"
+              src="/hero.JPG"
               alt="absman"
-              className=" mx-auto rounded-lg"
+              className=" mx-auto rounded-lg "
             />
-          </div> */}
+          </div>
         </div>
       </section>
-      <section className=" bg-lightGreen px-5 py-16 text-white relative">
-        <div className=" px-3 py-3 text-black bg-white border-4 border-lightRed h-[170px] rounded-2xl relative -top-[72px] -mt-[72px] flex flex-col justify-center items-center gap-y-3">
-          <h3 className=" text-center text-2xl font-medium">Token Address</h3>
-          <div className=" border-2 border-black py-3 px-2 rounded-full">
-            <p className=" text-xs font-medium">
-              0x532f27101965dd16442E59d40670FaF5eBB142E4
-            </p>
+      <section className=" bg-lightGreen px-5 py-16 md:px-12 xl:px-24 text-white relative">
+        <div className=" text-black bg-white border-4 border-lightRed h-[230px] mx-auto max-w-[500px] rounded-2xl relative -top-[115px] -mt-[72px]  gap-y-3">
+          <div className=" text-[10px] flex itc gap-1 py-2 border-b-4 border-lightRed ">
+            <div className=" flex itc">
+              <img src="/copy.png" alt="" className=" w-4" />
+              <p>Token address:</p>
+            </div>
+            <p>{""}0x532f27101965dd16442E59d40670FaF5e</p>
           </div>
-          <button className=" flex items-center gap-1 justify-center text-sm uppercase w-[100px] bg-lightRed text-white py-2 rounded-full">
-            <p>copy</p>
-            <img src="/copy.png" alt="" className=" w-6" />
-          </button>
+          <div className=" px-5 flex flex-col justify-center py-4">
+            <h3 className=" text-5xl font-medium uppercase text-darkGreen">
+              Coming <br />
+              Soon!!!
+            </h3>
+
+            <button className=" mx-auto mt-3 text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
+              Buy
+            </button>
+          </div>
         </div>
 
-        <h2 className=" uppercase text-center text-white text-5xl abt relative w-fit mx-auto">
-          About
+        <h2 className=" uppercase text-white text-5xl relative text-center">
+          What is <br />
+          This About?
         </h2>
-        <div className=" mt-10">
-          <div className=" border p-3 rounded-md">
+        <div className=" border-[3px] border-black rounded-[40px] overflow-hidden mt-10">
+          <div className=" px-5 py-7 bg-white">
+            <h3 className=" uppercase text-darkGreen text-4xl font-medium">
+              Origins of absman
+            </h3>
+          </div>
+          <div className=" ">
+            <div className=" hidden">
+              <h3 className=" uppercase">Origins of absman</h3>
+            </div>
+            <div className=" bg-darkGreen px-5 py-8 flex flex-col gap-y-5 border-t-[3px] border-black">
+              <p>
+                Once a brilliant developer, he was betrayed by the very system
+                he sought to safeguard. A catastrophic breach fused him with the
+                Abstract code, turning him into something more—a silent sentinel
+                for a digital age. The Ruggers, merciless thieves of the crypto
+                world, thrive in the dark corners of the decentralized web.
+              </p>
+              <p>
+                They exploit, they destroy, leaving only ruin in their wake. But
+                Absman fights back, not as a hero, but as a necessary evil. He
+                strikes from the void, dismantling their schemes with cold
+                precision, leaving nothing but fear in his wake.
+              </p>
+              <p>
+                He doesn’t wear the Abstract logo as a symbol of hope—it’s a
+                warning. To the criminals lurking in the code, to those who prey
+                on the innocent, it means one thing: Your time is running out.
+                Absman knows the truth: In this world, there are no second
+                chances. Only the strong survive, and the strong do what’s
+                necessary. He will protect the network—no matter the cost.
+              </p>
+            </div>
+            <div className=" border-t-[3px] border-black">
+              <img src="absman.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
+        {/* <div className=" mt-10 md:flex md:gap-x-10 md:items-center md:justify-between lg:gap-x-16 lg:justify-center">
+          <div className=" border p-3 rounded-md max-w-[350px] mx-auto md:max-w-[40%] lg:max-w-[320px] md:mx-0">
             <img src="about.jpeg" alt="about image" className=" rounded-md" />
           </div>
-          <div className=" mt-5 about-text text-lg">
+          <div className=" mt-5 md:mt-0 about-text text-lg max-w-[500px] mx-auto md:mx-0 md:max-w-[60%] lg:max-w-[500px]">
             <p>
               Once a brilliant developer, he was betrayed by the very system he
               sought to safeguard. A catastrophic breach fused him with the
@@ -109,11 +162,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className=" mt-10">
-          <div className=" border p-3 rounded-md">
+        <div className=" mt-10 md:flex md:gap-x-10 md:items-center md:justify-between lg:gap-x-16 lg:justify-center">
+          <div className=" order-2 border p-3 rounded-md max-w-[350px] mx-auto md:max-w-[40%] lg:max-w-[320px] md:mx-0">
             <img src="about-2.jpg" alt="about image" className=" rounded-md" />
           </div>
-          <div className=" mt-5 about-text text-lg">
+          <div className=" order-1 mt-5 md:mt-0 about-text text-lg max-w-[500px] mx-auto md:mx-0 md:max-w-[60%] lg:max-w-[500px]">
             <p>
               They exploit, they destroy, leaving only ruin in their wake. But
               Absman fights back, not as a hero, but as a necessary evil. He
@@ -122,11 +175,11 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className=" mt-10">
-          <div className=" border p-3 rounded-md">
+        <div className=" mt-10 md:flex md:gap-x-10 md:items-center md:justify-between lg:gap-x-16 lg:justify-center">
+          <div className="  border p-3 rounded-md max-w-[350px] mx-auto md:max-w-[40%] lg:max-w-[320px] md:mx-0">
             <img src="save.jpg" alt="about image" className=" rounded-md" />
           </div>
-          <div className=" mt-5 about-text text-lg">
+          <div className=" mt-5 md:mt-0 about-text text-lg max-w-[500px] mx-auto md:mx-0 md:max-w-[60%] lg:max-w-[500px]">
             <p>
               He doesn’t wear the Abstract logo as a symbol of hope—it’s a
               warning. To the criminals lurking in the code, to those who prey
@@ -136,50 +189,22 @@ export default function Home() {
               necessary. He will protect the network—no matter the cost.
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
-      <section className=" text-darkGreen  px-5 py-16  relative">
-        <h2 className=" text-center text-4xl  uppercase">Tokenomics</h2>
-        <div className=" mt-10 flex flex-col gap-y-5">
-          <div className=" relative flex justify-center items-center">
-            <img src="/frame.png" alt="" />
-            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-fit">
-              <h3 className=" uppercase text-xl font-bold text-lightRed">
-                Locked liquidity
-              </h3>
-              <p className=" text-darkGreen capitalize font-medium mt-1">
-                273 million tokens
-              </p>
-            </div>
-          </div>
-          <div className=" relative flex justify-center items-center">
-            <img src="/frame.png" alt="" />
-            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto max-w-[200px] h-fit ">
-              <h3 className=" uppercase text-xl font-bold text-lightRed">
-                Donated to liquidity pool
-              </h3>
-              <p className=" text-darkGreen capitalize font-medium mt-1">
-                113 million tokens
-              </p>
-            </div>
-          </div>
-          <div className=" relative flex justify-center items-center">
-            <img src="/frame.png" alt="" />
-            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-fit">
-              <h3 className=" uppercase text-xl font-bold text-lightRed">
-                Tax
-              </h3>
-              <p className=" text-darkGreen capitalize font-medium mt-1">0%</p>
-            </div>
-          </div>
+      <section className=" bg-darkGreen px-5 py-16 md:px-12 xl:px-24 text-white relative">
+        <div className=" text-center">
+          <p>We got really</p>
+          <h2 className=" mt-2 text-lightGreen uppercase text-center  text-5xl  relative w-fit mx-auto">
+            Strong foundation
+          </h2>
         </div>
-      </section>
-      <section className=" bg-lightGreen px-5 py-16 text-white relative">
-        <h2 className=" text-darkGreen uppercase text-center  text-5xl  relative w-fit mx-auto">
-          Goals
-        </h2>
-        <div className=" mt-10">
-          <p className="">
+        {/* <div className=" mt-10 md:flex md:items-center">
+          <img
+            src="/scammer.jpg"
+            className=" mt-3 rounded-xl max-w-[350px] mx-auto md:max-w-[30%]"
+            alt=""
+          />
+          <p className=" max-w-[350px] mx-auto text-center md:text-left md:max-w-[400px]">
             Previous dev was a villain rugged who everyone, Absman has had a
             transformation come back with bigger muscles and new website for a
             cto as a hero to save the chart and he has defeated the villain who
@@ -187,16 +212,15 @@ export default function Home() {
             abster and noot the two biggest memes on abstract Both penguins
             Penguins can’t fly but absman can.
           </p>
-          <img src="/scammer.jpg" className=" mt-3 rounded-xl" alt="" />
-        </div>
+        </div> */}
 
         <div className=" mt-12 flex flex-col gap-y-5">
-          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
-            <div>
-              <img src="partner.jpg" alt="" />
+          <div className=" rounded-2xl max-w-[350px] mx-auto">
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
+              <img src="partner.jpg" className=" w-[280px]" alt="" />
             </div>
-            <div className=" text-gray-700 mt-8">
-              <h3 className=" text-darkGreen font-medium text-2xl">
+            <div className=" mt-8">
+              <h3 className=" text-lightGreen font-semibold text-2xl">
                 Strategic Partnerships
               </h3>
               <p className=" mt-3">
@@ -206,12 +230,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
-            <div>
-              <img src="community.jpg" alt="" className=" w-full" />
+          <div className=" rounded-2xl max-w-[350px] mx-auto">
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
+              <img src="partner.jpg" className=" w-[280px]" alt="" />
             </div>
-            <div className=" text-gray-700 mt-8">
-              <h3 className=" text-darkGreen font-medium text-2xl">
+            <div className=" mt-8">
+              <h3 className=" text-lightGreen font-semibold text-2xl">
                 Community Support
               </h3>
               <p className=" mt-3">
@@ -221,12 +245,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" bg-white px-5 py-8 rounded-2xl max-w-[350px] mx-auto">
-            <div>
-              <img src="ecosystem.png" alt="" />
+          <div className=" rounded-2xl max-w-[350px] mx-auto">
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
+              <img src="partner.jpg" className=" w-[280px]" alt="" />
             </div>
-            <div className=" text-gray-700 mt-8">
-              <h3 className=" text-darkGreen font-medium text-2xl">
+            <div className=" mt-8">
+              <h3 className=" text-lightGreen font-semibold text-2xl">
                 Growing Ecosystem
               </h3>
               <p className=" mt-3">
@@ -238,7 +262,43 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className=" bg-darkGreen px-5 py-16 pb-24  relative text-white">
+      <section className=" bg-white text-darkGreen  px-5 py-16 md:px-12 xl:px-24  relative">
+        <h2 className=" text-center text-4xl  uppercase">Tokenomics</h2>
+        <div className=" mt-10 flex flex-col gap-y-5 md:flex-wrap md:flex-row">
+          <div className=" relative flex justify-center items-center max-w-[350px] mx-auto lg:max-w-[31%]">
+            <img src="/frame3.jpg" alt="" />
+            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-fit">
+              <h3 className=" uppercase text-xl font-bold text-lightGreen">
+                Locked liquidity
+              </h3>
+              <p className=" text-white capitalize font-medium mt-1">
+                273 million tokens
+              </p>
+            </div>
+          </div>
+          <div className=" relative flex justify-center items-center max-w-[350px] mx-auto lg:max-w-[31%]">
+            <img src="/frame3.jpg" alt="" />
+            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto max-w-[200px] h-fit ">
+              <h3 className=" uppercase text-xl font-bold text-lightGreen">
+                Donated to liquidity pool
+              </h3>
+              <p className=" text-white capitalize font-medium mt-1">
+                113 million tokens
+              </p>
+            </div>
+          </div>
+          <div className=" relative flex justify-center items-center max-w-[350px] mx-auto lg:max-w-[31%]">
+            <img src="/frame3.jpg" alt="" />
+            <div className=" text-center absolute top-0 left-0 bottom-0 right-0 m-auto w-fit h-fit">
+              <h3 className=" uppercase text-xl font-bold text-lightGreen">
+                Tax
+              </h3>
+              <p className=" text-white capitalize font-medium mt-1">0%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className=" bg-lightGreen px-5 py-16 pb-24 md:px-12 xl:px-24  relative text-white">
         <h2 className=" text-center text-4xl  uppercase">How To Buy?</h2>
         <div className=" mt-10">
           <Tabs
@@ -249,19 +309,44 @@ export default function Home() {
           >
             <TabList
               className={[
-                ` absolute -bottom-16 left-0 z-50 gap-x-3 flex items-center
+                ` absolute bottom-4 left-0 z-50 gap-x-3 flex items-center
                  justify-center w-full`,
               ]}
             >
               <Tab
                 className={[
-                  " outline-none cursor-pointer w-[50px] h-[50px] border-2 border-white flex justify-center items-center rounded-full",
-                  tabIndex == 0 ? " bg-white text-darkGreen" : "",
+                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                  tabIndex == 0
+                    ? " bg-lightGreen border-lightGreen"
+                    : " bg-gray-500",
                 ]}
-              >
-                <p className=" text-xl font-semibold">1</p>
-              </Tab>
+              ></Tab>
               <Tab
+                className={[
+                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                  tabIndex == 1
+                    ? " bg-lightGreen border-lightGreen"
+                    : " bg-gray-500",
+                ]}
+              ></Tab>
+              <Tab
+                className={[
+                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                  tabIndex == 2
+                    ? " bg-lightGreen border-lightGreen"
+                    : " bg-gray-500",
+                ]}
+              ></Tab>
+              <Tab
+                className={[
+                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                  tabIndex == 3
+                    ? " bg-lightGreen border-lightGreen"
+                    : " bg-gray-500",
+                ]}
+              ></Tab>
+
+              {/* <Tab
                 className={[
                   " outline-none cursor-pointer w-[50px] h-[50px] border-2 border-white flex justify-center items-center rounded-full",
                   tabIndex == 1 ? " bg-white text-darkGreen" : "",
@@ -284,121 +369,95 @@ export default function Home() {
                 ]}
               >
                 <p className=" text-xl font-semibold">4</p>
-              </Tab>
+              </Tab> */}
             </TabList>
 
             <TabPanel>
               <div
                 className={
-                  " overflow-hidden bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
+                  " overflow-hidden h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
                 <img
                   src="/card-bg.png"
                   alt=""
-                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  className=" absolute -bottom-1 -left-2 w-[80px]
                   object-cover"
                 />
-
-                <h2 className=" text-2xl font-medium relative">
-                  CHOOSE A CRYPTO-CURRENCY EXCHANGE:
+                <p className=" uppercase font-bold mb-4">step 1:</p>
+                <h2 className=" text-2xl text-lightGreen font-medium relative uppercase">
+                  create your crypto wallet:
                 </h2>
-                <p className=" text-gray-600 mt-3 relative">
-                  Select a reputable exchange known for its security measures,
-                  user-friendly interface, and support for your specific
-                  cryptocurrency. Consider factors such as trading fees,
-                  available trading pairs, and customer support options to
-                  ensure the exchange meets your needs.
+                <p className=" text-white mt-3 relative">
+                  Sign up directly at uniswap and create your wallet, or import
+                  abstract network into MetaMask/wallet of your choice
                 </p>
-                <h3 className=" text-lightRed absolute bottom-5 right-5 text-3xl font-bold">
-                  01
-                </h3>
               </div>
             </TabPanel>
             <TabPanel>
               <div
                 className={
-                  " overflow-hidden bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative"
+                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
                 <img
                   src="/card-bg.png"
                   alt=""
-                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  className=" absolute -bottom-1 -left-2 w-[80px]
                   object-cover"
                 />
-
-                <h2 className=" text-2xl font-medium relative">
-                  SIGN UP AND VERIFY:
+                <p className=" uppercase font-bold mb-4">step 2:</p>
+                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
+                  deposit some eth:
                 </h2>
-                <p className=" text-gray-600 mt-3 relative">
-                  Register for an account on the chosen exchange by providing
-                  basic information such as your name, email address, and
-                  password. Complete any required verification steps, which may
-                  include providing identification documents and proof of
-                  address. This verification process helps ensure compliance
-                  with regulations and enhances account security.
+                <p className="  mt-3 relative">
+                  Using a centralised exchange purchase your desired amount of
+                  ETH and send it to your new wallet
                 </p>
-                <h3 className=" text-lightRed absolute bottom-5 right-5 text-3xl font-bold">
-                  02
-                </h3>
               </div>
             </TabPanel>
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative overflow-hidden"
+                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
                 <img
                   src="/card-bg.png"
                   alt=""
-                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  className=" absolute -bottom-1 -left-2 w-[80px]
                   object-cover"
                 />
-                <h2 className=" text-2xl font-medium relative">
-                  DEPOSIT FUNDS:
+                <p className=" uppercase font-bold mb-4">step 3:</p>
+                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
+                  BRIDGE TO ABSTRACT:
                 </h2>
-                <p className=" text-gray-600 mt-3 relative">
-                  Once your account is set up, deposit funds into it using one
-                  of the supported payment methods. This can include bank
-                  transfers, credit/debit cards, or other payment options
-                  offered by the exchange. Follow the instructions provided by
-                  the exchange to complete the deposit process, and be aware of
-                  any associated fees or processing times.
+                <p className="  mt-3 relative">
+                  Bridge your mainnet ETH to Abstract ETH. This is important as
+                  you will need it to swap for $ABSMAN{" "}
                 </p>
-                <h3 className=" text-lightRed absolute bottom-5 right-5 text-3xl font-bold">
-                  03
-                </h3>
               </div>
             </TabPanel>
             <TabPanel>
               <div
                 className={
-                  " bg-white text-darkGreen py-8 pb-16 px-5 rounded-2xl relative transition-all overflow-hidden"
+                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
                 }
               >
                 <img
                   src="/card-bg.png"
                   alt=""
-                  className=" absolute -bottom-1 -left-2 w-[180px]
+                  className=" absolute -bottom-1 -left-2 w-[80px]
                   object-cover"
                 />
-                <h2 className=" text-2xl font-medium relative">
-                  PLACE YOUR ORDER:
+                <p className=" uppercase font-bold mb-4">step 4:</p>
+                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
+                  swap to $ABSMAN:
                 </h2>
-                <p className=" text-gray-600 mt-3 relative">
-                  Navigate to the exchange's trading section and locate the
-                  trading pair for your cryptocurrency and dollars (e.g.,
-                  MEME/USD). Choose whether to place a market order, which
-                  executes immediately at the current market price, or a limit
-                  order, where you specify the price at which you want to buy.
-                  Enter the amount of cryptocurrency you wish to purchase and
-                  review the order details before confirming.
+                <p className="  mt-3 relative">
+                  Using the abstract trade function at uniswap, You can now swap
+                  your abstract ETH for $ABSMAN on the abstract dashboard
                 </p>
-                <h3 className=" text-lightRed absolute bottom-5 right-5 text-3xl font-bold">
-                  04
-                </h3>
               </div>
             </TabPanel>
           </Tabs>
