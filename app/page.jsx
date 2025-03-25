@@ -20,16 +20,22 @@ export default function Home() {
         </Link>
 
         <div className=" flex items-center justify-center gap-x-2">
-          <Link href={"/"}>
+          <Link href={"https://t.me/absmantakeover"} target="_blank">
             <button className=" w-8 ">
               <img src="/tel.png" alt="" />
             </button>
           </Link>
-          <Link href={"/"}>
+          <Link href={"https://x.com/absmancto?s=21"} target="_blank">
             <button className=" w-8 ">
               <img src="/xtwitter.png" alt="" />
             </button>
           </Link>
+          <Link
+            target="_blank"
+            href={
+              "https://dexscreener.com/abstract/0x21089f984CD70ECC2FD643A5AE6E4D2048422f50"
+            }
+          ></Link>
           <button className=" text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
             Buy
           </button>
@@ -67,9 +73,16 @@ export default function Home() {
               Abstract blockchain .
             </p>
             <div className=" flex items-center justify-center gap-x-3 mt-5">
-              <button className=" bg-lightGreen font-bold w-[140px] py-4 rounded-full uppercase text-sm btn">
-                Buy
-              </button>
+              <Link
+                target="_blank"
+                href={
+                  "https://dexscreener.com/abstract/0x21089f984CD70ECC2FD643A5AE6E4D2048422f50"
+                }
+              >
+                <button className=" bg-lightGreen font-bold w-[140px] py-4 rounded-full uppercase text-sm btn">
+                  Buy
+                </button>
+              </Link>
             </div>
           </div>
           <div className="  mt-10 w-[280px] lg:w-[350px] mx-auto">
@@ -95,10 +108,16 @@ export default function Home() {
               Coming <br className=" md:hidden" />
               Soon!!!
             </h3>
-
-            <button className=" mx-auto mt-3 text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
-              Buy
-            </button>
+            <Link
+              target="_blank"
+              href={
+                "https://dexscreener.com/abstract/0x21089f984CD70ECC2FD643A5AE6E4D2048422f50"
+              }
+            >
+              <button className=" mx-auto mt-3 text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
+                Buy
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -497,25 +516,27 @@ export default function Home() {
           <img src="absman-logo.png" alt="" className=" w-28" />
 
           <div className=" flex items-center justify-center gap-x-3 mt-5">
-            <button className=" bg-lightGreen font-bold w-[180px] py-4 rounded-full uppercase text-sm btn">
-              Buy Now
-            </button>
+            <Link
+              target="_blank"
+              href={
+                "https://dexscreener.com/abstract/0x21089f984CD70ECC2FD643A5AE6E4D2048422f50"
+              }
+            >
+              <button className=" bg-lightGreen font-bold w-[180px] py-4 rounded-full uppercase text-sm btn">
+                Buy Now
+              </button>
+            </Link>
           </div>
 
           <div className=" flex items-center justify-center gap-x-2 mt-10">
-            <Link href={"/"}>
+            <Link href={"https://t.me/absmantakeover"} target="_blank">
               <button className=" hover:bg-black w-8 bg-white p-2 rounded-full ">
                 <img src="/tel.svg" alt="" />
               </button>
             </Link>
-            <Link href={"/"}>
+            <Link href={"https://x.com/absmancto?s=21"} target="_blank">
               <button className=" hover:bg-black w-8 bg-white p-2 rounded-full ">
                 <img src="/xtwitter.svg" alt="" />
-              </button>
-            </Link>
-            <Link href={"/"}>
-              <button className=" hover:bg-black w-8 bg-white p-2 rounded-full">
-                <img src="/instagram.svg" alt="" />
               </button>
             </Link>
             {/* <Link href={"/"}>
