@@ -288,7 +288,9 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-lightGreen px-5 py-16 pb-24 md:px-12 xl:px-24  relative text-white">
-        <h2 className=" text-center text-4xl  uppercase">How To Buy?</h2>
+        <h2 className=" text-center text-4xl lg:text-6xl  uppercase">
+          How To Buy?
+        </h2>
         <div className=" mt-10 lg:flex lg:justify-center  lg:gap-x-12">
           <div className=" order-2 ">
             <Tabs
@@ -379,12 +381,12 @@ export default function Home() {
                       step 1:
                     </p>
                     <h2 className=" text-2xl md:text-3xl text-lightGreen font-medium relative uppercase">
-                      create your crypto wallet:
+                      Bridge ETH to Abstract
                     </h2>
                     <p className=" text-white mt-3 relative">
-                      Sign up directly at uniswap and create your wallet, or
-                      import abstract network into MetaMask/wallet of your
-                      choice
+                      Open meta mask and use meta mask browser to input this
+                      link: https://relay.link/bridge/ abstract Use this
+                      aggregator to bridge eth to eth (abs)
                     </p>
                   </div>
                 </div>
@@ -406,11 +408,13 @@ export default function Home() {
                       step 2:
                     </p>
                     <h2 className="  uppercase md:text-3xl text-lightGreen text-2xl font-medium relative">
-                      deposit some eth:
+                      set up your account:
                     </h2>
                     <p className="  mt-3 relative">
-                      Using a centralised exchange purchase your desired amount
-                      of ETH and send it to your new wallet
+                      Your ETH (abstract) will appear in your wallet on
+                      MetaMask. ﻿﻿Set up account on Abstract chain - https://
+                      www.abs.xyz/ (there is NO wallet, its all done inside
+                      MetaMask browser)
                     </p>
                   </div>
                 </div>
@@ -432,11 +436,11 @@ export default function Home() {
                       step 3:
                     </p>
                     <h2 className="  uppercase md:text-3xl text-lightGreen text-2xl font-medium relative">
-                      BRIDGE TO ABSTRACT:
+                      deposit some ETH:
                     </h2>
                     <p className="  mt-3 relative">
-                      Bridge your mainnet ETH to Abstract ETH. This is important
-                      as you will need it to swap for $ABSMAN{" "}
+                      Fund account by sending ETH from your abstract wallet on
+                      Metamask to your new Abstract wallet inside browser.
                     </p>
                   </div>
                 </div>
@@ -458,12 +462,12 @@ export default function Home() {
                       step 4:
                     </p>
                     <h2 className=" md:text-3xl uppercase text-lightGreen text-2xl font-medium relative">
-                      swap to $ABSMAN:
+                      search for $ABSMAN:
                     </h2>
                     <p className="  mt-3 relative">
-                      Using the abstract trade function at uniswap, You can now
-                      swap your abstract ETH for $ABSMAN on the abstract
-                      dashboard
+                      Input CA or simply search absman on abs wallet portal.
+                      Enter the amount of cryptocurrency you wish to purchase
+                      and review the order details before confirming.
                     </p>
                   </div>
                 </div>
