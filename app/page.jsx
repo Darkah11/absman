@@ -10,7 +10,7 @@ export default function Home() {
   const [tabIndex, setTabIndex] = useState(0);
   return (
     <>
-      <nav className=" nav border-4 border-darkGreen bg-white rounded-full fixed top-5 z-50 px-5 py-3 flex justify-between w-[350px] left-0 right-0 mx-auto items-center">
+      <nav className=" nav border-4 border-darkGreen bg-white rounded-full fixed top-5 z-50 px-5 py-3 flex justify-between w-[350px] md:w-[550px] left-0 right-0 mx-auto items-center">
         <Link href={"/"}>
           <img
             src="/absman-logo.png"
@@ -18,31 +18,27 @@ export default function Home() {
             className=" w-16 lg:w-20 rotating"
           />
         </Link>
-        <button className=" text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
-          Buy
-        </button>
-        {/* <div className=" flex items-center justify-center gap-x-2">
+
+        <div className=" flex items-center justify-center gap-x-2">
           <Link href={"/"}>
-            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed ">
-              <img src="/tel.svg" alt="" />
+            <button className=" w-8 ">
+              <img src="/tel.png" alt="" />
             </button>
           </Link>
           <Link href={"/"}>
-            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed">
-              <img src="/xtwitter.svg" alt="" />
+            <button className=" w-8 ">
+              <img src="/xtwitter.png" alt="" />
             </button>
           </Link>
-          <Link href={"/"}>
-            <button className=" hover:bg-black w-8 lg:w-12 bg-white p-2 rounded-full border-2 border-lightRed">
+          <button className=" text-white bg-lightGreen font-bold w-[100px] py-3 rounded-full uppercase text-sm btn ">
+            Buy
+          </button>
+          {/* <Link href={"/"}>
+            <button className=" w-10">
               <img src="/instagram.svg" alt="" />
             </button>
-          </Link>
-          {/* <Link href={"/"}>
-            <button className="  bg-white text-lightRed font-bold w-[80px] py-2 rounded-md uppercase text-sm">
-              Buy
-            </button>
           </Link> */}
-        {/* </div>  */}
+        </div>
       </nav>
       <section className=" relative text-white px-5 py-16 lg:px-12 pt-32 md:pt-44 pb-52 ">
         <div className=" absolute w-full h-full top-0 left-0">
@@ -93,7 +89,7 @@ export default function Home() {
               <p>Token address:</p>
             </div>
             <p>{""}0x532f27101965dd16442E59d40670FaF5e</p>
-          </div> 
+          </div>
           <div className=" px-5  md:items-center h-fit md:py-7 py-3 md:flex md:flex-col md:justify-center">
             <h3 className=" text-5xl md:text-center font-medium uppercase text-darkGreen">
               Coming <br className=" md:hidden" />
@@ -106,21 +102,23 @@ export default function Home() {
           </div>
         </div>
 
-        <h2 className=" uppercase text-white text-5xl relative text-center">
-          What is <br />
+        <h2 className=" uppercase text-white text-5xl relative text-center md:text-6xl lg:text-7xl xl:text-8xl">
+          What is <br className=" md:hidden" />
           This About?
         </h2>
-        <div className=" border-[3px] border-black mx-auto max-w-[390px] md:max-w-full md:mx-0 rounded-[40px] overflow-hidden mt-10">
-          <div className=" px-5 py-7 bg-white">
-            <h3 className=" uppercase text-darkGreen text-4xl md:text-5xl font-medium">
+        <div className=" border-[3px] xl:mx-auto border-black xl:border-0 mx-auto max-w-[390px] md:max-w-full xl:max-w-fit md:mx-0 rounded-[40px] overflow-hidden mt-10">
+          <div className=" px-5 py-7 bg-white xl:hidden">
+            <h3 className=" uppercase text-darkGreen text-4xl md:text-5xl  font-medium">
               Origins of <br className=" hidden md:block" /> absman
             </h3>
           </div>
-          <div className=" md:flex">
-            <div className=" hidden">
-              <h3 className=" uppercase ">Origins of absman</h3>
+          <div className=" md:flex xl:items-center">
+            <div className=" hidden xl:block w-[400px] h-[570px] border-y-4 border-l-4 border-black rounded-l-[40px] px-5 py-40 bg-white">
+              <h3 className=" uppercase text-darkGreen text-6xl text-center">
+                Origins of <br /> absman
+              </h3>
             </div>
-            <div className=" md:max-w-[50%] bg-darkGreen px-5 py-8 flex flex-col gap-y-5 border-t-[3px] border-black">
+            <div className=" md:max-w-[50%] xl:max-w-[400px] bg-darkGreen px-5 py-8 flex flex-col gap-y-5 border-t-[3px] xl:border-4 xl:rounded-[40px] border-black xl:py-12 xl:text-lg">
               <p>
                 Once a brilliant developer, he was betrayed by the very system
                 he sought to safeguard. A catastrophic breach fused him with the
@@ -143,8 +141,12 @@ export default function Home() {
                 necessary. He will protect the network—no matter the cost.
               </p>
             </div>
-            <div className=" border-t-[3px] border-black ">
-              <img src="absman.jpeg" alt="" className=" md:h-full object-cover" />
+            <div className=" border-t-[3px]  xl:w-[400px] xl:h-[570px] xl:border-y-4 xl:border-r-4 border-black xl:rounded-r-[40px] overflow-hidden">
+              <img
+                src="absman.jpeg"
+                alt=""
+                className=" md:h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -194,14 +196,13 @@ export default function Home() {
       <section className=" bg-darkGreen px-5 py-16 md:px-12 xl:px-24 text-white relative">
         <div className=" text-center">
           <p>We got really</p>
-          <h2 className=" mt-2 text-lightGreen uppercase text-center  text-5xl  relative w-fit mx-auto">
+          <h2 className=" lg:text-6xl mt-2 text-lightGreen uppercase text-center  text-5xl  relative w-fit mx-auto">
             Strong foundation
           </h2>
         </div>
-       
 
-        <div className=" mt-12 flex flex-col gap-y-12">
-          <div className=" rounded-2xl max-w-[350px] mx-auto">
+        <div className=" mt-12 flex flex-col md:flex-row md:justify-between xl:gap-x-16 xl:justify-center gap-y-12">
+          <div className=" rounded-2xl max-w-[350px] mx-auto md:max-w-[32%] md:mx-0 xl:max-w-[320px]">
             <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
               <img src="partners.jpg" className=" w-full" alt="" />
             </div>
@@ -216,7 +217,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" rounded-2xl max-w-[350px] mx-auto">
+          <div className=" rounded-2xl max-w-[350px] mx-auto md:max-w-[32%] md:mx-0 xl:max-w-[320px]">
             <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
               <img src="community.jpg" className=" w-full" alt="" />
             </div>
@@ -231,7 +232,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className=" rounded-2xl max-w-[350px] mx-auto">
+          <div className=" rounded-2xl max-w-[350px] mx-auto md:max-w-[32%] md:mx-0 xl:max-w-[320px]">
             <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
               <img src="ecosystem.png" className=" w-full" alt="" />
             </div>
@@ -249,7 +250,9 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-white text-darkGreen  px-5 py-16 md:px-12 xl:px-24  relative">
-        <h2 className=" text-center text-4xl  uppercase">Tokenomics</h2>
+        <h2 className=" text-center text-4xl lg:text-6xl  uppercase">
+          Tokenomics
+        </h2>
         <div className=" mt-10 flex flex-col gap-y-5 md:flex-wrap md:flex-row">
           <div className=" relative flex justify-center items-center max-w-[350px] mx-auto lg:max-w-[31%]">
             <img src="/frame3.jpg" alt="" />
@@ -286,53 +289,54 @@ export default function Home() {
       </section>
       <section className=" bg-lightGreen px-5 py-16 pb-24 md:px-12 xl:px-24  relative text-white">
         <h2 className=" text-center text-4xl  uppercase">How To Buy?</h2>
-        <div className=" mt-10">
-          <Tabs
-            selectedIndex={tabIndex}
-            onSelect={(index) => setTabIndex(index)}
-            className={" relative"}
-            forceRenderTabPanel={false}
-          >
-            <TabList
-              className={[
-                ` absolute bottom-4 left-0 z-50 gap-x-3 flex items-center
-                 justify-center w-full`,
-              ]}
+        <div className=" mt-10 lg:flex lg:justify-center  lg:gap-x-12">
+          <div className=" order-2 ">
+            <Tabs
+              selectedIndex={tabIndex}
+              onSelect={(index) => setTabIndex(index)}
+              className={" relative"}
+              forceRenderTabPanel={false}
             >
-              <Tab
+              <TabList
                 className={[
-                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
-                  tabIndex == 0
-                    ? " bg-lightGreen border-lightGreen"
-                    : " bg-gray-500",
+                  ` absolute bottom-4 left-0 z-50 gap-x-3 flex items-center
+                 justify-center w-full md:justify-start md:left-12`,
                 ]}
-              ></Tab>
-              <Tab
-                className={[
-                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
-                  tabIndex == 1
-                    ? " bg-lightGreen border-lightGreen"
-                    : " bg-gray-500",
-                ]}
-              ></Tab>
-              <Tab
-                className={[
-                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
-                  tabIndex == 2
-                    ? " bg-lightGreen border-lightGreen"
-                    : " bg-gray-500",
-                ]}
-              ></Tab>
-              <Tab
-                className={[
-                  " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
-                  tabIndex == 3
-                    ? " bg-lightGreen border-lightGreen"
-                    : " bg-gray-500",
-                ]}
-              ></Tab>
+              >
+                <Tab
+                  className={[
+                    " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                    tabIndex == 0
+                      ? " bg-lightGreen border-lightGreen"
+                      : " bg-gray-500",
+                  ]}
+                ></Tab>
+                <Tab
+                  className={[
+                    " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                    tabIndex == 1
+                      ? " bg-lightGreen border-lightGreen"
+                      : " bg-gray-500",
+                  ]}
+                ></Tab>
+                <Tab
+                  className={[
+                    " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                    tabIndex == 2
+                      ? " bg-lightGreen border-lightGreen"
+                      : " bg-gray-500",
+                  ]}
+                ></Tab>
+                <Tab
+                  className={[
+                    " outline-none cursor-pointer w-[40px] h-[15px] border-2 border-gray-500  flex justify-center items-center rounded-full",
+                    tabIndex == 3
+                      ? " bg-lightGreen border-lightGreen"
+                      : " bg-gray-500",
+                  ]}
+                ></Tab>
 
-              {/* <Tab
+                {/* <Tab
                 className={[
                   " outline-none cursor-pointer w-[50px] h-[50px] border-2 border-white flex justify-center items-center rounded-full",
                   tabIndex == 1 ? " bg-white text-darkGreen" : "",
@@ -356,107 +360,126 @@ export default function Home() {
               >
                 <p className=" text-xl font-semibold">4</p>
               </Tab> */}
-            </TabList>
+              </TabList>
 
-            <TabPanel>
-              <div
-                className={
-                  " overflow-hidden h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
-                }
-              >
-                <img
-                  src="/card-bg.png"
-                  alt=""
-                  className=" absolute -bottom-1 -left-2 w-[80px]
+              <TabPanel>
+                <div
+                  className={
+                    " overflow-hidden max-w-[400px] lg:w-[600px] xl:py-20 xl:h-[400px] xl:w-[900px] md:px-12 mx-auto md:max-w-full h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
+                  }
+                >
+                  <img
+                    src="/card-bg.png"
+                    alt=""
+                    className=" absolute -bottom-1 -left-2 w-[80px] xl:w-[200px]
                   object-cover"
-                />
-                <p className=" uppercase font-bold mb-4">step 1:</p>
-                <h2 className=" text-2xl text-lightGreen font-medium relative uppercase">
-                  create your crypto wallet:
-                </h2>
-                <p className=" text-white mt-3 relative">
-                  Sign up directly at uniswap and create your wallet, or import
-                  abstract network into MetaMask/wallet of your choice
-                </p>
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div
-                className={
-                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
-                }
-              >
-                <img
-                  src="/card-bg.png"
-                  alt=""
-                  className=" absolute -bottom-1 -left-2 w-[80px]
+                  />
+                  <div className=" max-w-[400px]">
+                    <p className=" uppercase font-bold mb-4 md:text-xl">
+                      step 1:
+                    </p>
+                    <h2 className=" text-2xl md:text-3xl text-lightGreen font-medium relative uppercase">
+                      create your crypto wallet:
+                    </h2>
+                    <p className=" text-white mt-3 relative">
+                      Sign up directly at uniswap and create your wallet, or
+                      import abstract network into MetaMask/wallet of your
+                      choice
+                    </p>
+                  </div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div
+                  className={
+                    " overflow-hidden max-w-[400px] xl:py-20 xl:h-[400px] xl:w-[900px] lg:w-[600px] xl:w-[700px]  md:px-12 mx-auto md:max-w-full h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
+                  }
+                >
+                  <img
+                    src="/card-bg.png"
+                    alt=""
+                    className=" absolute -bottom-1 -left-2 w-[80px] xl:w-[200px]
                   object-cover"
-                />
-                <p className=" uppercase font-bold mb-4">step 2:</p>
-                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
-                  deposit some eth:
-                </h2>
-                <p className="  mt-3 relative">
-                  Using a centralised exchange purchase your desired amount of
-                  ETH and send it to your new wallet
-                </p>
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div
-                className={
-                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
-                }
-              >
-                <img
-                  src="/card-bg.png"
-                  alt=""
-                  className=" absolute -bottom-1 -left-2 w-[80px]
+                  />
+                  <div className=" max-w-[400px]">
+                    <p className=" uppercase font-bold mb-4 md:text-xl">
+                      step 2:
+                    </p>
+                    <h2 className="  uppercase md:text-3xl text-lightGreen text-2xl font-medium relative">
+                      deposit some eth:
+                    </h2>
+                    <p className="  mt-3 relative">
+                      Using a centralised exchange purchase your desired amount
+                      of ETH and send it to your new wallet
+                    </p>
+                  </div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div
+                  className={
+                    " overflow-hidden  max-w-[400px] xl:py-20 xl:h-[400px] xl:w-[900px]   lg:w-[600px] md:px-12 mx-auto md:max-w-full h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
+                  }
+                >
+                  <img
+                    src="/card-bg.png"
+                    alt=""
+                    className=" absolute -bottom-1 -left-2 w-[80px] xl:w-[200px]
                   object-cover"
-                />
-                <p className=" uppercase font-bold mb-4">step 3:</p>
-                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
-                  BRIDGE TO ABSTRACT:
-                </h2>
-                <p className="  mt-3 relative">
-                  Bridge your mainnet ETH to Abstract ETH. This is important as
-                  you will need it to swap for $ABSMAN{" "}
-                </p>
-              </div>
-            </TabPanel>
-            <TabPanel>
-              <div
-                className={
-                  " overflow-hidden bg-darkGreen h-[290px] text-white py-8 pb-16 px-5 rounded-2xl relative"
-                }
-              >
-                <img
-                  src="/card-bg.png"
-                  alt=""
-                  className=" absolute -bottom-1 -left-2 w-[80px]
+                  />
+                  <div className=" max-w-[400px]">
+                    <p className=" uppercase font-bold mb-4 md:text-xl">
+                      step 3:
+                    </p>
+                    <h2 className="  uppercase md:text-3xl text-lightGreen text-2xl font-medium relative">
+                      BRIDGE TO ABSTRACT:
+                    </h2>
+                    <p className="  mt-3 relative">
+                      Bridge your mainnet ETH to Abstract ETH. This is important
+                      as you will need it to swap for $ABSMAN{" "}
+                    </p>
+                  </div>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <div
+                  className={
+                    " overflow-hidden  max-w-[400px] xl:py-20 xl:h-[400px] xl:w-[900px]  lg:w-[600px] md:px-12 mx-auto md:max-w-full h-[290px] bg-darkGreen text-white py-8 pb-16 px-5 rounded-2xl relative"
+                  }
+                >
+                  <img
+                    src="/card-bg.png"
+                    alt=""
+                    className=" absolute -bottom-1 -left-2 w-[80px] xl:w-[200px]
                   object-cover"
-                />
-                <p className=" uppercase font-bold mb-4">step 4:</p>
-                <h2 className="  uppercase text-lightGreen text-2xl font-medium relative">
-                  swap to $ABSMAN:
-                </h2>
-                <p className="  mt-3 relative">
-                  Using the abstract trade function at uniswap, You can now swap
-                  your abstract ETH for $ABSMAN on the abstract dashboard
-                </p>
-              </div>
-            </TabPanel>
-          </Tabs>
-          <div className=" bg-darkGreen mt-5 py-8 px-5 rounded-2xl">
-            <p>
+                  />
+                  <div className=" max-w-[400px]">
+                    <p className=" uppercase font-bold mb-4 md:text-xl">
+                      step 4:
+                    </p>
+                    <h2 className=" md:text-3xl uppercase text-lightGreen text-2xl font-medium relative">
+                      swap to $ABSMAN:
+                    </h2>
+                    <p className="  mt-3 relative">
+                      Using the abstract trade function at uniswap, You can now
+                      swap your abstract ETH for $ABSMAN on the abstract
+                      dashboard
+                    </p>
+                  </div>
+                </div>
+              </TabPanel>
+            </Tabs>
+          </div>
+          {/* <div className=" order-1 bg-darkGreen mt-5 lg:mx-0 lg:mt-0 lg:flex-col py-8 px-5 lg:max-w-[380px] xl:max-w-[450px] rounded-2xl md:justify-between max-w-[400px] mx-auto md:max-w-full lg: md:flex md:items-center gap-x-12">
+            <p className=" md:max-w-[400px]">
               Have you gone through all of the steps before? Great! Then just
               hit the button down below and fill up your bag with memecoin right
               now.
             </p>
-            <div className=" mt-5">
+            <div className=" mt-5 md:min-w-[250px]">
               <img src="/absman-bg.jpeg" alt="" className=" h-36 w-full object-cover rounded-xl" />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <footer className=" bg-black py-16 text-white">
