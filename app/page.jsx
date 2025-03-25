@@ -98,10 +98,9 @@ export default function Home() {
         <div className=" text-black bg-white border-4 overflow-hidden border-lightRed h-[230px] mx-auto max-w-[500px] rounded-2xl relative -top-[115px] -mt-[72px]  gap-y-3">
           <div className=" cursor-pointer text-white text-[10px] md:text-base bg-lightGreen flex items-center justify-center gap-1 py-2 border-b-4 border-lightRed ">
             <div className=" flex items-center">
-              <img src="/copy.png" alt="" className=" w-4" />
               <p>Token address:</p>
             </div>
-            <p>{""}0x532f27101965dd16442E59d40670FaF5e</p>
+            <p>{""}0xB1FC7732BE1a013E3fA91a80a64469e8c26E3e70</p>
           </div>
           <div className=" px-5  md:items-center h-fit md:py-7 py-3 md:flex md:flex-col md:justify-center">
             <h3 className=" text-5xl md:text-center font-medium uppercase text-darkGreen">
