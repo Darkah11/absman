@@ -44,7 +44,7 @@ export default function Home() {
           </Link> */}
         {/* </div>  */}
       </nav>
-      <section className=" relative text-white px-5 py-16 lg:px-12 pt-32 pb-52 ">
+      <section className=" relative text-white px-5 py-16 lg:px-12 pt-32 md:pt-44 pb-52 ">
         <div className=" absolute w-full h-full top-0 left-0">
           <div className=" absolute w-full bg-black  h-full opacity-50" />
           <img
@@ -53,10 +53,10 @@ export default function Home() {
             className=" w-full h-full object-cover"
           />
         </div>
-        <div className=" relative md:flex md:items-center md:justify-between lg:gap-x-24 lg:justify-center md:gap-x-10">
-          <div className=" text-center md:text-left">
+        <div className=" relative ">
+          <div className=" text-center ">
             <p>INTRODUCING</p>
-            <h1 className=" text-lightGreen text-transparent font-bold text-6xl lg:text-8xl">
+            <h1 className=" text-lightGreen text-transparent font-bold text-6xl lg:text-[120px]">
               ABSMAN
             </h1>
             {/* <div className=" mt-3 md:hidden">
@@ -66,17 +66,17 @@ export default function Home() {
                 className=" mx-auto rounded-lg max-w-[240px]"
               />
             </div> */}
-            <p className=" mt-4 max-w-[450px] md:mt-3 mx-auto md:mx-0 lg:text-lg">
+            <p className=" mt-4 max-w-[450px] md:mt-3 mx-auto lg:max-w-[1000px]  lg:text-lg">
               Absman rises from the shadows —a relentless force protecting the
               Abstract blockchain .
             </p>
-            <div className=" flex items-center justify-center gap-x-3 mt-5 md:mt-6 lg:mt-8 md:justify-start">
+            <div className=" flex items-center justify-center gap-x-3 mt-5">
               <button className=" bg-lightGreen font-bold w-[140px] py-4 rounded-full uppercase text-sm btn">
                 Buy
               </button>
             </div>
           </div>
-          <div className=" md:mt-0 mt-10 w-[280px] mx-auto  md:w-[40%] lg:w-[400px]">
+          <div className="  mt-10 w-[280px] lg:w-[350px] mx-auto">
             <img
               src="/hero.JPG"
               alt="absman"
@@ -86,17 +86,17 @@ export default function Home() {
         </div>
       </section>
       <section className=" bg-lightGreen px-5 py-16 md:px-12 xl:px-24 text-white relative">
-        <div className=" text-black bg-white border-4 border-lightRed h-[230px] mx-auto max-w-[500px] rounded-2xl relative -top-[115px] -mt-[72px]  gap-y-3">
-          <div className=" text-[10px] flex itc gap-1 py-2 border-b-4 border-lightRed ">
-            <div className=" flex itc">
+        <div className=" text-black bg-white border-4 overflow-hidden border-lightRed h-[230px] mx-auto max-w-[500px] rounded-2xl relative -top-[115px] -mt-[72px]  gap-y-3">
+          <div className=" cursor-pointer text-white text-[10px] md:text-base bg-lightGreen flex items-center justify-center gap-1 py-2 border-b-4 border-lightRed ">
+            <div className=" flex items-center">
               <img src="/copy.png" alt="" className=" w-4" />
               <p>Token address:</p>
             </div>
             <p>{""}0x532f27101965dd16442E59d40670FaF5e</p>
-          </div>
-          <div className=" px-5 flex flex-col justify-center py-4">
-            <h3 className=" text-5xl font-medium uppercase text-darkGreen">
-              Coming <br />
+          </div> 
+          <div className=" px-5  md:items-center h-fit md:py-7 py-3 md:flex md:flex-col md:justify-center">
+            <h3 className=" text-5xl md:text-center font-medium uppercase text-darkGreen">
+              Coming <br className=" md:hidden" />
               Soon!!!
             </h3>
 
@@ -110,17 +110,17 @@ export default function Home() {
           What is <br />
           This About?
         </h2>
-        <div className=" border-[3px] border-black rounded-[40px] overflow-hidden mt-10">
+        <div className=" border-[3px] border-black mx-auto max-w-[390px] md:max-w-full md:mx-0 rounded-[40px] overflow-hidden mt-10">
           <div className=" px-5 py-7 bg-white">
-            <h3 className=" uppercase text-darkGreen text-4xl font-medium">
-              Origins of absman
+            <h3 className=" uppercase text-darkGreen text-4xl md:text-5xl font-medium">
+              Origins of <br className=" hidden md:block" /> absman
             </h3>
           </div>
-          <div className=" ">
+          <div className=" md:flex">
             <div className=" hidden">
-              <h3 className=" uppercase">Origins of absman</h3>
+              <h3 className=" uppercase ">Origins of absman</h3>
             </div>
-            <div className=" bg-darkGreen px-5 py-8 flex flex-col gap-y-5 border-t-[3px] border-black">
+            <div className=" md:max-w-[50%] bg-darkGreen px-5 py-8 flex flex-col gap-y-5 border-t-[3px] border-black">
               <p>
                 Once a brilliant developer, he was betrayed by the very system
                 he sought to safeguard. A catastrophic breach fused him with the
@@ -143,8 +143,8 @@ export default function Home() {
                 necessary. He will protect the network—no matter the cost.
               </p>
             </div>
-            <div className=" border-t-[3px] border-black">
-              <img src="absman.jpeg" alt="" />
+            <div className=" border-t-[3px] border-black ">
+              <img src="absman.jpeg" alt="" className=" md:h-full object-cover" />
             </div>
           </div>
         </div>
@@ -198,26 +198,12 @@ export default function Home() {
             Strong foundation
           </h2>
         </div>
-        {/* <div className=" mt-10 md:flex md:items-center">
-          <img
-            src="/scammer.jpg"
-            className=" mt-3 rounded-xl max-w-[350px] mx-auto md:max-w-[30%]"
-            alt=""
-          />
-          <p className=" max-w-[350px] mx-auto text-center md:text-left md:max-w-[400px]">
-            Previous dev was a villain rugged who everyone, Absman has had a
-            transformation come back with bigger muscles and new website for a
-            cto as a hero to save the chart and he has defeated the villain who
-            is old dev. Overall goal is to make absman a competition against
-            abster and noot the two biggest memes on abstract Both penguins
-            Penguins can’t fly but absman can.
-          </p>
-        </div> */}
+       
 
-        <div className=" mt-12 flex flex-col gap-y-5">
+        <div className=" mt-12 flex flex-col gap-y-12">
           <div className=" rounded-2xl max-w-[350px] mx-auto">
-            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
-              <img src="partner.jpg" className=" w-[280px]" alt="" />
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
+              <img src="partners.jpg" className=" w-full" alt="" />
             </div>
             <div className=" mt-8">
               <h3 className=" text-lightGreen font-semibold text-2xl">
@@ -231,8 +217,8 @@ export default function Home() {
             </div>
           </div>
           <div className=" rounded-2xl max-w-[350px] mx-auto">
-            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
-              <img src="partner.jpg" className=" w-[280px]" alt="" />
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
+              <img src="community.jpg" className=" w-full" alt="" />
             </div>
             <div className=" mt-8">
               <h3 className=" text-lightGreen font-semibold text-2xl">
@@ -246,8 +232,8 @@ export default function Home() {
             </div>
           </div>
           <div className=" rounded-2xl max-w-[350px] mx-auto">
-            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[370px] flex justify-center items-end ">
-              <img src="partner.jpg" className=" w-[280px]" alt="" />
+            <div className=" bg-white px-5 pt-10 rounded-t-full overflow-hidden h-[330px] flex justify-center items-center ">
+              <img src="ecosystem.png" className=" w-full" alt="" />
             </div>
             <div className=" mt-8">
               <h3 className=" text-lightGreen font-semibold text-2xl">
@@ -461,6 +447,16 @@ export default function Home() {
               </div>
             </TabPanel>
           </Tabs>
+          <div className=" bg-darkGreen mt-5 py-8 px-5 rounded-2xl">
+            <p>
+              Have you gone through all of the steps before? Great! Then just
+              hit the button down below and fill up your bag with memecoin right
+              now.
+            </p>
+            <div className=" mt-5">
+              <img src="/absman-bg.jpeg" alt="" className=" h-36 w-full object-cover rounded-xl" />
+            </div>
+          </div>
         </div>
       </section>
       <footer className=" bg-black py-16 text-white">

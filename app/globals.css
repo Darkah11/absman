@@ -36,6 +36,7 @@ h4,
   font-family: "Tektur", serif;
 }
 .nav {
+  z-index: 9999;
 }
 /* .btn {
   box-shadow: 20px 0px 10px #64bf7b23, -20px 0px 10px #64bf7b23,
